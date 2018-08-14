@@ -1,0 +1,130 @@
+-----------Exception Details on  2/18/2018 11:13:21 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/18/2018 11:13:21 AM
+
+Error Line No : 0
+
+Error Message: InvalidCastException
+
+Error Location : Object cannot be cast from DBNull to other types.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:C4077
+
+Stack Trace:    at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 379
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/18/2018 11:21:50 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/18/2018 11:21:50 AM
+
+Error Line No : 0
+
+Error Message: InvalidCastException
+
+Error Location : Object cannot be cast from DBNull to other types.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:C4077
+
+Stack Trace:    at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 379
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/18/2018 11:35:52 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/18/2018 11:35:52 AM
+
+Error Line No : 0
+
+Error Message: InvalidCastException
+
+Error Location : Object cannot be cast from DBNull to other types.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:C4077
+
+Stack Trace:    at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 379
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/18/2018 11:36:13 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/18/2018 11:36:13 AM
+
+Error Line No : 0
+
+Error Message: InvalidCastException
+
+Error Location : Object cannot be cast from DBNull to other types.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:C4077
+
+Stack Trace:    at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 379
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/18/2018 11:36:25 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/18/2018 11:36:25 AM
+
+Error Line No : 0
+
+Error Message: InvalidCastException
+
+Error Location : Object cannot be cast from DBNull to other types.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:C4077
+
+Stack Trace:    at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 379
+
+
+--------------------------------*End*------------------------------------------
+
+
+

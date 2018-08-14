@@ -1,0 +1,24 @@
+-----------Exception Details on  25-Feb-18 4:11:33 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 25-Feb-18 4:11:33 PM
+
+Error Line No : 61
+
+Error Message: NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+Error Page Url: http://localhost:1052/LoginPg.aspx
+
+User:ADMIN
+
+Stack Trace:    at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password, String Dob) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\LoginPg.aspx.cs:line 61
+
+
+--------------------------------*End*------------------------------------------
+
+
+

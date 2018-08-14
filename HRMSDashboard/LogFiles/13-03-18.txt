@@ -1,0 +1,752 @@
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:08:51 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D1948') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D1948' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:08:51 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D1948') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D1948' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D1948' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:08:56 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D1948') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D1948' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:08:56 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D1948') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D1948' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D1948' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:09:40 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D1948') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D1948' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:09:40 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D1948') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D1948' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D1948' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:12:39 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D1948') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D1948' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:12:39 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D1948') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D1948' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D1948' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:13:31 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D1948') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D1948' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:13:31 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D1948') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D1948' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D1948' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:16:28 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:16:28 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:16:34 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:16:34 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:17:35 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:17:35 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:17:40 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:17:40 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:19:26 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:19:26 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:22:47 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:22:47 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:23:20 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:23:20 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:23:24 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:23:24 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:27:40 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:27:40 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:27:44 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:27:44 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:27:46 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:27:46 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:35:04 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'A0884') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'A0884' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:35:04 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'A0884') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'A0884' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'A0884' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:38:24 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'A0884') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'A0884' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 10:38:24 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'A0884') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'A0884' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'A0884' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:25:20 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:25:20 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:25:26 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:25:26 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:28:31 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:28:31 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:28:37 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:28:37 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:32:11 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:32:11 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:33:03 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:33:03 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:33:41 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:33:41 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:37:44 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:37:44 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:37:55 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:37:55 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:39:36 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:39:36 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:25 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:25 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:33 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:33 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:38 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:38 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:47 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:47 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:50 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:50 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:54 AM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 11:57:54 AM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:41:18 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:41:18 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:41:39 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'A0884') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'A0884' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:41:39 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'A0884') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'A0884' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'A0884' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:43:29 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'A0884') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'A0884' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:43:29 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'A0884') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'A0884' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'A0884' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:43:33 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'A0884') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'A0884' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:43:33 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'A0884') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'A0884' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'A0884' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:43:38 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'A0884') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'A0884' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:43:38 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'A0884') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'A0884' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'A0884' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:44:58 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D1948') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D1948' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:44:58 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D1948') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D1948' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D1948' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:47:24 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D1948') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D1948' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:47:24 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D1948') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D1948' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D1948' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:48:21 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:48:21 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:49:31 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:49:31 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:52:02 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:52:02 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:54:22 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:54:22 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:55:03 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = 'D2484') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = 'D2484' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:55:03 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = 'D2484') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = 'D2484' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = 'D2484' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:58:23 PM USERID: ADMIN
+
+ select x_sect_desc section,catgdesc, gradecode,doj_currgrade, doj_nmdc, doj_unit, x_proj_desc, dob, firstappmnt_date, present_mobile_res, empid, DECODE(SHORTNAME,NULL,FIRSTNAME,SHORTNAME)  name, gender, fathername, mothername, spousename, maritalstat, retirementdate retirementDt, deptname department, round(months_between(sysdate,firstappmnt_Date)/12,2) yrsofservice, religcode religion, castecatg caste, hometown, empqualif,  firstappmnt_desigdesc ,  (select DESIGSHORT desigdesc from designation desig join employee emp on (emp.desigcode = desig.desigcode and desig.isactive = 'Y') where emp.empid = '') presentDesig  from employee emp join department dept on (dept.deptcode = emp.deptcode and dept.isactive = 'Y')   join fam06_sect on(c_sect_code = sectcode and fam06_sect.isactive = 'Y')  join payscale on(payscale.scaleid = emp.scaleid and payscale.isactive = 'Y')  join fam05_proj on(fam05_proj.c_proj_code = projcode) join discipline on(discipline.discipcode = emp.discipcode)  join empcatg on(empcatg.catgcode = emp.catgcode and empcatg.isactive = 'Y') where empid = '' and empstatus = 'A' and SUBSTR(emp.EMPID,1,1) BETWEEN 'A' AND 'Z' and  emp.CATGCODE NOT IN ('ADV','CISF')
+--------------------------------END----------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+Log Written Date: 13-Mar-18 12:58:23 PM USERID: ADMIN
+
+ select (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'B75' and temp.empid = '') basic,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'D60' and temp.empid = '' ) da,  (select nvl(amount, 0)  from empsalary temp join employee emp on (temp.empid = emp.empid and emp.empstatus = 'A') where temp.earndedcode = 'P70' and temp.empid = '' ) fpa  from dual 
+--------------------------------END----------------------------------------------------
+
+
+

@@ -1,0 +1,112 @@
+-----------Exception Details on  31-10-2017 14:40:47-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 31-10-2017 14:40:47
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : Oracle Communication: Failed to connect to server or failed to parse connect string
+
+Error Page Url: http://localhost:1052/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, CriteriaCtx criteriaCtx)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\hp\Documents\VS 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\LoginPg.aspx.cs:line 53
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  31-10-2017 14:41:09-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 31-10-2017 14:41:09
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : Oracle Communication: Failed to connect to server or failed to parse connect string
+
+Error Page Url: http://localhost:1052/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, CriteriaCtx criteriaCtx)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\hp\Documents\VS 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\LoginPg.aspx.cs:line 53
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  31-10-2017 15:21:45-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 31-10-2017 15:21:45
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : Oracle Communication: Failed to connect to server or failed to parse connect string
+
+Error Page Url: http://localhost:1052/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, CriteriaCtx criteriaCtx)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\hp\Documents\VS 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\LoginPg.aspx.cs:line 53
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  31-10-2017 15:22:54-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 31-10-2017 15:22:54
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : Oracle Communication: Failed to connect to server or failed to parse connect string
+
+Error Page Url: http://localhost:1052/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, CriteriaCtx criteriaCtx)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\hp\Documents\VS 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\LoginPg.aspx.cs:line 53
+
+
+--------------------------------*End*------------------------------------------
+
+
+

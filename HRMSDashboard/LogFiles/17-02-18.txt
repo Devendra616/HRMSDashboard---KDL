@@ -1,0 +1,412 @@
+-----------Exception Details on  2/17/2018 10:36:03 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:36:03 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 337
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:36:20 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:36:20 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 337
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:38:28 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:38:28 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 337
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:39:24 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:39:24 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 337
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:39:51 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:39:51 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 337
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:40:20 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:40:20 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 337
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:40:32 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:40:32 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 337
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:41:53 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:41:53 AM
+
+Error Line No : 21
+
+Error Message: NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:
+
+Stack Trace:    at HRMSDashboard.Dashboard.Page_Load(Object sender, EventArgs e) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 21
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:43:49 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:43:49 AM
+
+Error Line No : 21
+
+Error Message: NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at HRMSDashboard.Dashboard.Page_Load(Object sender, EventArgs e) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 21
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:45:22 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:45:22 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 338
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:46:06 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:46:06 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 338
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:50:34 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:50:34 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 338
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:51:16 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:51:16 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 338
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:56:09 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:56:09 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00907: missing right parenthesis
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId)
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/17/2018 10:57:22 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/17/2018 10:57:22 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-01008: not all variables bound
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId)
+
+
+--------------------------------*End*------------------------------------------
+
+
+

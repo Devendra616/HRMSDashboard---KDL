@@ -1,0 +1,192 @@
+-----------Exception Details on  2/24/2018 9:27:02 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/24/2018 9:27:02 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00933: SQL command not properly ended
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 532
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/24/2018 9:30:15 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/24/2018 9:30:15 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00933: SQL command not properly ended
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 533
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/24/2018 10:24:41 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/24/2018 10:24:41 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00933: SQL command not properly ended
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 533
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/24/2018 10:24:49 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/24/2018 10:24:49 AM
+
+Error Line No : 47
+
+Error Message: NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+Error Page Url: http://localhost:1052/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\LoginPg.aspx.cs:line 47
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  2/24/2018 10:25:45 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 2/24/2018 10:25:45 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00933: SQL command not properly ended
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 533
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  24-Feb-18 10:28:45 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-Feb-18 10:28:45 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00933: SQL command not properly ended
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 533
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  24-Feb-18 11:15:06 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-Feb-18 11:15:06 AM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-00933: SQL command not properly ended
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A1359
+
+Stack Trace:    at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.Dashboard.fetchData(String empId)
+
+
+--------------------------------*End*------------------------------------------
+
+
+

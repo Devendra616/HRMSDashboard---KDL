@@ -1,0 +1,255 @@
+-----------Exception Details on  11-Jun-17 11:12:08 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 11-Jun-17 11:12:08 AM
+
+Error Line No : line 63
+
+Error Message: Exception
+
+Exception Type: System.Exception
+
+Error Location : testing log exception
+
+ Error Page Url: http://localhost:1429/LoginPg.aspx
+
+User Host IP: 
+
+Stack Trace:    at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\HOME-2017\Documents\Visual Studio 2015\Projects\HRMSDashboard\HRMSDashboard\LoginPg.aspx.cs:line 63
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  11-Jun-17 11:31:50 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 11-Jun-17 11:31:50 AM
+
+Error Line No : line 63
+
+Error Message: Exception
+
+Exception Type: System.Exception
+
+Error Location : testing log exception
+
+ Error Page Url: http://localhost:1429/LoginPg.aspx
+
+User Host IP: 
+
+Stack Trace:    at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\HOME-2017\Documents\Visual Studio 2015\Projects\HRMSDashboard\HRMSDashboard\LoginPg.aspx.cs:line 63
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  11-Jun-17 11:31:58 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 11-Jun-17 11:31:58 AM
+
+Error Line No : line 63
+
+Error Message: Exception
+
+Exception Type: System.Exception
+
+Error Location : testing log exception
+
+ Error Page Url: http://localhost:1429/LoginPg.aspx
+
+User Host IP: 
+
+Stack Trace:    at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\HOME-2017\Documents\Visual Studio 2015\Projects\HRMSDashboard\HRMSDashboard\LoginPg.aspx.cs:line 63
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  11-Jun-17 11:45:37 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 11-Jun-17 11:45:37 AM
+
+Error Line No : line 58
+
+Error Message: InvalidOperationException
+
+Error Location : Invalid operation on a closed object
+
+Error Page Url: http://localhost:1429/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\HOME-2017\Documents\Visual Studio 2015\Projects\HRMSDashboard\HRMSDashboard\LoginPg.aspx.cs:line 58
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  11-Jun-17 11:45:48 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 11-Jun-17 11:45:48 AM
+
+Error Line No : line 58
+
+Error Message: InvalidOperationException
+
+Error Location : Invalid operation on a closed object
+
+Error Page Url: http://localhost:1429/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\HOME-2017\Documents\Visual Studio 2015\Projects\HRMSDashboard\HRMSDashboard\LoginPg.aspx.cs:line 58
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  11-Jun-17 11:50:17 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 11-Jun-17 11:50:16 AM
+
+Error Line No : ssword)
+
+Error Message: InvalidOperationException
+
+Error Location : Invalid operation on a closed object
+
+Error Page Url: http://localhost:1429/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password)
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  11-Jun-17 11:56:00 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 11-Jun-17 11:56:00 AM
+
+Error Line No : ssword)
+
+Error Message: InvalidOperationException
+
+Error Location : Invalid operation on a closed object
+
+Error Page Url: http://localhost:1429/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password)
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  11-Jun-17 12:29:13 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 11-Jun-17 12:29:13 PM
+
+Error Line No : 21
+
+Error Message: NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+Error Page Url: http://localhost:1429/Dashboard.aspx
+
+User:
+
+Stack Trace:    at HRMSDashboard.Dashboard.Page_Load(Object sender, EventArgs e) in C:\Users\HOME-2017\Documents\Visual Studio 2015\Projects\HRMSDashboard\HRMSDashboard\Dashboard.aspx.cs:line 21
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  11-Jun-17 3:32:50 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 11-Jun-17 3:32:50 PM
+
+Error Line No : 21
+
+Error Message: NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+Error Page Url: http://localhost:1429/Dashboard.aspx
+
+User:
+
+Stack Trace:    at HRMSDashboard.Dashboard.Page_Load(Object sender, EventArgs e) in C:\Users\HOME-2017\Documents\Visual Studio 2015\Projects\HRMSDashboard\HRMSDashboard\Dashboard.aspx.cs:line 21
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  11-Jun-17 3:33:33 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 11-Jun-17 3:33:33 PM
+
+Error Line No : 0
+
+Error Message: OracleException
+
+Error Location : ORA-03135: Connection lost contact
+
+Error Page Url: http://localhost:1429/LoginPg.aspx
+
+User:D1948
+
+Stack Trace:    at Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   at OracleInternal.TTC.TTCExecuteSql.ReceiveExecuteResponse(Accessor[]& defineAccessors, Accessor[] bindAccessors, Boolean bHasReturningParams, SQLMetaData& sqlMetaData, SqlStatementType statementType, Int64 noOfRowsFetchedLastTime, Int32 noOfRowsToFetch, Int32& noOfRowsFetched, Int64& queryId, Int32 longFetchSize, Int64 initialLOBFetchSize, Int64[] scnFromExecution, Boolean bAllInputBinds, Int32 arrayBindCount, DataUnmarshaller& dataUnmarshaller, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int64[]& rowsAffectedByArrayBind, Boolean bDefineDone, Boolean& bMoreThanOneRowAffectedByDmlWithRetClause, List`1& implicitRSList, Boolean bLOBArrayFetchRequired)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password) in C:\Users\HOME-2017\Documents\Visual Studio 2015\Projects\HRMSDashboard\HRMSDashboard\LoginPg.aspx.cs:line 58
+
+
+--------------------------------*End*------------------------------------------
+
+
+

@@ -1,0 +1,204 @@
+-----------Exception Details on  26-Feb-18 10:55:13 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 26-Feb-18 10:55:13 AM
+
+Error Line No : 0
+
+Error Message: InvalidOperationException
+
+Error Location : Invalid operation on a closed object
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:D1948
+
+Stack Trace:    at Oracle.ManagedDataAccess.Client.OracleDataReader.IsDBNull(Int32 i)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetValue(Int32 i)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(Int32 i)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 459
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  26-Feb-18 11:28:29 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 26-Feb-18 11:28:29 AM
+
+Error Line No : 0
+
+Error Message: InvalidCastException
+
+Error Location : Object cannot be cast from DBNull to other types.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:ADMIN
+
+Stack Trace:    at System.DBNull.System.IConvertible.ToInt64(IFormatProvider provider)
+   at System.Convert.ToInt64(Object value)
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 365
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  26-Feb-18 11:31:25 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 26-Feb-18 11:31:25 AM
+
+Error Line No : 0
+
+Error Message: InvalidCastException
+
+Error Location : Object cannot be cast from DBNull to other types.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:ADMIN
+
+Stack Trace:    at System.DBNull.System.IConvertible.ToInt64(IFormatProvider provider)
+   at System.Convert.ToInt64(Object value)
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 364
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  26-Feb-18 12:39:17 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 26-Feb-18 12:39:17 PM
+
+Error Line No : 0
+
+Error Message: InvalidCastException
+
+Error Location : Object cannot be cast from DBNull to other types.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:C1567
+
+Stack Trace:    at System.DBNull.System.IConvertible.ToInt64(IFormatProvider provider)
+   at System.Convert.ToInt64(Object value)
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 342
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  26-Feb-18 12:42:32 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 26-Feb-18 12:42:32 PM
+
+Error Line No : 0
+
+Error Message: InvalidCastException
+
+Error Location : Object cannot be cast from DBNull to other types.
+
+Error Page Url: http://localhost:1052/Dashboard.aspx
+
+User:A0436
+
+Stack Trace:    at System.DBNull.System.IConvertible.ToInt64(IFormatProvider provider)
+   at System.Convert.ToInt64(Object value)
+   at HRMSDashboard.Dashboard.fetchData(String empId) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\Dashboard.aspx.cs:line 342
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  26-Feb-18 3:10:39 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 26-Feb-18 3:10:39 PM
+
+Error Line No : 71
+
+Error Message: NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+Error Page Url: http://localhost:1052/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password, String Dob) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\LoginPg.aspx.cs:line 71
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  26-Feb-18 3:10:48 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 26-Feb-18 3:10:48 PM
+
+Error Line No : 71
+
+Error Message: NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+Error Page Url: http://localhost:1052/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password, String Dob) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\LoginPg.aspx.cs:line 71
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  26-Feb-18 3:11:14 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 26-Feb-18 3:11:14 PM
+
+Error Line No : 71
+
+Error Message: NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+Error Page Url: http://localhost:1052/LoginPg.aspx
+
+User:A1359
+
+Stack Trace:    at HRMSDashboard.LoginPg.ValidateUser(String UserName, String Password, String Dob) in C:\Users\DEVENDRA\Documents\Visual Studio 2015\Projects\HRMSDashboard - Copy\HRMSDashboard\LoginPg.aspx.cs:line 71
+
+
+--------------------------------*End*------------------------------------------
+
+
+
